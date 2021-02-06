@@ -23,7 +23,7 @@ while($row = dbFetchAssoc($res)) {
     <!-- /.box-header -->
     <div class="box-body">
       <dl class="dl-horizontal">
-        <dt>Username</dt>
+        <dt>Booked By</dt>
         <dd><?php echo $name; ?></dd>
         
 		<dt>Course Code</dt>
@@ -37,9 +37,6 @@ while($row = dbFetchAssoc($res)) {
 
 		<dt>Purpose </dt>
 	<dd><?php echo $comments; ?></dd>
-
-		<dt>Booking Status</dt>
-        <dd><span class="label label-<?php echo $stat; ?>"><?php echo $status; ?></span></dd>
 		
 
       </dl>
